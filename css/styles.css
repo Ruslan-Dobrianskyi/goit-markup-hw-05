@@ -253,7 +253,6 @@ img {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  padding: 120px 0;
   margin-bottom: 72px;
 }
 .team-card {
@@ -494,8 +493,7 @@ img {
   text-transform: none;
   margin-bottom: 16px;
 }
-.subscribe-lable {
-}
+
 .subscribe-wrapper {
   color: #fff;
   padding: 0 16px;
@@ -553,6 +551,8 @@ img {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-open {
   opacity: 1;
@@ -572,6 +572,7 @@ img {
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-close {
   position: absolute;
