@@ -587,13 +587,20 @@ img {
   fill: #2e2f42;
   background: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-close:hover,
 .btn-close:focus {
-  background-color: #4d5ae5;
+  background-color: #404bbf;
+  border: none;
   fill: #ffffff;
+}
+.close-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-text {
   color: #2e2f42;
@@ -611,6 +618,10 @@ img {
 .form-lable {
   display: block;
   margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
 }
 .input-field-cont {
   position: relative;
@@ -623,7 +634,7 @@ img {
   height: 40px;
   outline: transparent;
   background-color: transparent;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-form {
   position: absolute;
@@ -634,6 +645,7 @@ img {
 
 .input-form:focus {
   border: 1px solid #4d5ae5;
+  fill: #4d5ae5;
 }
 
 .input-form:focus + .icon-form {
